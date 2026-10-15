@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Time In Place – Privacy Policy</title>
+<meta name="description" content="Privacy policy of the Time In Place Android app.">
+<style>
+  :root { --bg:#F3F5F2; --card:#FFFFFF; --text:#16201C; --muted:#5B6862; --accent:#0B6E5B; --border:#DDE3DE; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0F1512; --card:#1A221E; --text:#E8EEEA; --muted:#9AA9A2; --accent:#3DBFA3; --border:#2B3631; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:32px 20px 64px; }
+  h1 { font-size:30px; line-height:1.25; margin:0 0 4px; }
+  h2 { font-size:20px; margin:32px 0 8px; }
+  p, li { color:var(--text); }
+  .meta { color:var(--muted); margin:0 0 24px; }
+  .card { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:4px 20px; margin:16px 0; }
+  table { width:100%; border-collapse:collapse; margin:12px 0; font-size:15px; }
+  th, td { text-align:left; vertical-align:top; padding:8px 10px; border-bottom:1px solid var(--border); }
+  th { color:var(--muted); font-weight:600; }
+  a { color:var(--accent); }
+  code { background:var(--card); border:1px solid var(--border); border-radius:6px; padding:1px 5px; font-size:14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Time In Place – Privacy Policy</h1>
+  <p class="meta">Last updated: 15 October 2026 · App package: <code>com.trunglabs.timeinplace</code> · Developer: TrungLabs</p>
+
+  <p>Time In Place is an Android app that automatically records the places you stay at and for how long, and summarises your days and weeks. This policy explains what data the app handles, where it goes, and the choices you have. In short: <strong>your data stays on your phone</strong>; the only copy that can leave it is the backup you choose to keep in your own Google Drive.</p>
+
+  <div class="card">
+    <h2>Summary</h2>
+    <ul>
+      <li>We (the developer) run <strong>no server</strong> that receives your location history, photos, notes or expenses.</li>
+      <li>There are <strong>no ads</strong>, no analytics SDKs and no sale or sharing of your data with advertisers or data brokers.</li>
+      <li>Looking up place names online and signing in to Google for backup are <strong>optional</strong>; the app works without them.</li>
+    </ul>
+  </div>
+
+  <h2>1. Data the app collects and why</h2>
+  <table>
+    <tr><th>Data</th><th>Why</th><th>Where it is kept</th></tr>
+    <tr>
+      <td><strong>Location</strong> (precise and approximate, including in the background when the app is closed, if you allow it) and motion state (still / moving)</td>
+      <td>To detect when you stay somewhere, for how long, and to draw your journal, summaries and map. Background access is what lets the journal fill in without you opening the app.</td>
+      <td>On your phone only (local database). Raw location points are never uploaded or included in backups.</td>
+    </tr>
+    <tr>
+      <td><strong>Places and notes you create</strong>: names, categories, radius, visit notes, goals, privacy rules, trips</td>
+      <td>To label visits and power the summaries, goals and trips.</td>
+      <td>On your phone. Included in your Google Drive backup if you turn backup on.</td>
+    </tr>
+    <tr>
+      <td><strong>Photos</strong> (optional): the capture time of photos in your library, and a downsized copy of photos you attach to a visit</td>
+      <td>To suggest or attach photos taken while you were at a place. The app reads only the photo's capture time, not the location stored inside the photo.</td>
+      <td>Downsized copies are stored in the app's private storage. They are included in your Google Drive backup if you turn backup on. Original photos are never modified or deleted.</td>
+    </tr>
+    <tr>
+      <td><strong>Payment notifications</strong> (optional): the amount, direction (spent / received), merchant and time found in notifications of the banking or wallet apps <em>you choose</em></td>
+      <td>To suggest expenses and attach them to the place where they happened.</td>
+      <td>Processed on your phone. The full text of the notification is not stored. Only the extracted amount, direction, merchant, time and source app are kept, and included in backups.</td>
+    </tr>
+    <tr>
+      <td><strong>Expenses you enter</strong> (amount, currency, note, time)</td>
+      <td>To show spending per visit and per period.</td>
+      <td>On your phone; included in backup if enabled.</td>
+    </tr>
+    <tr>
+      <td><strong>Settings</strong> (accuracy mode, appearance, reminders, etc.)</td>
+      <td>To make the app behave as you chose.</td>
+      <td>On your phone; most are included in backup.</td>
+    </tr>
+  </table>
+
+  <h2>2. Data that leaves your phone</h2>
+  <h3>2.1 Place-name lookup (optional, off by default)</h3>
+  <p>If you turn on "Look up place names online", the coordinates of a place where you just stayed (and nothing else) are sent to a map data provider to find nearby place names: <strong>Microsoft Azure Maps</strong>, or, if that service is unavailable or its monthly allowance for your device is used up, <strong>OpenStreetMap services (Overpass and Nominatim)</strong>. Requests are made only once per new visit and results are cached on your phone. When using OpenStreetMap services while you are signed in with Google, your Google email address is added to the request's User-Agent as a contact address, as that service's usage policy asks. If you leave the lookup off, no coordinates are sent for this purpose.</p>
+  <p>See <a href="https://www.microsoft.com/privacy/privacystatement">Microsoft's privacy statement</a> and the <a href="https://osmfoundation.org/wiki/Privacy_Policy">OpenStreetMap Foundation privacy policy</a>.</p>
+
+  <h3>2.2 Maps display (Google Maps)</h3>
+  <p>When a map is shown, the Google Maps SDK loads map tiles from Google. Google may receive technical information such as your IP address and device information as described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. The app does not send your visit history to Google Maps.</p>
+
+  <h3>2.3 Backup to Google Drive (optional)</h3>
+  <p>Signing in with Google is optional and only needed for backup. If you sign in and turn backup on, the app stores a backup file (and copies of photos you attached to visits) in the hidden app-data folder of <strong>your own</strong> Google Drive. The app requests only the <code>drive.appdata</code> permission, so it cannot see any other file in your Drive. The backup includes: places, visits, notes, expenses, goals, privacy rules, trips, most settings, the list of removed photos, cached place lookups, and photos attached to visits. It does <strong>not</strong> include raw location points, your account details, the online-lookup choice or pause state. Backups can be sent only over Wi-Fi if you choose. We, the developer, cannot access this backup.</p>
+  <p>You can remove the backup at any time from Settings → Google Drive backup → "Delete backup on Drive".</p>
+
+  <h2>3. What we do not do</h2>
+  <ul>
+    <li>We do not sell your data, share it for advertising, or use it for profiling.</li>
+    <li>We do not upload your location history, photos, notes or expenses to any server operated by the developer.</li>
+    <li>We do not read notifications of apps you have not chosen, and we do not store the content of notifications.</li>
+  </ul>
+
+  <h2>4. Your choices and rights</h2>
+  <ul>
+    <li><strong>Location:</strong> change or revoke location, background location and activity recognition in Android Settings → Apps → Time In Place → Permissions. The app then records only while open, or not at all.</li>
+    <li><strong>Pause or restrict recording:</strong> use the quick pause or time/place privacy rules in Settings; no location is stored during those periods.</li>
+    <li><strong>Photos and notifications:</strong> both are opt-in and can be turned off at any time in Settings; notification access can also be revoked in Android Settings.</li>
+    <li><strong>Online lookup and backup:</strong> optional and can be turned off; signing out stops backup and keeps data on your phone.</li>
+    <li><strong>Access and deletion:</strong> all your data is inside the app and can be deleted there (delete a visit's note, expenses or photos, delete a place). Uninstalling the app or clearing its storage in Android Settings removes everything stored on the phone.</li>
+  </ul>
+
+  <h2 id="delete">5. Deleting your data</h2>
+  <p>Because the developer holds no copy of your data, deleting it is done on your side:</p>
+  <ol>
+    <li>On your phone: uninstall Time In Place, or Android Settings → Apps → Time In Place → Storage → Clear storage.</li>
+    <li>In Google Drive (only if you used backup): open Settings → Google Drive backup → "Delete backup on Drive" in the app before uninstalling. You can also remove the app's hidden data at <a href="https://drive.google.com/drive/settings">Google Drive → Settings → Manage apps</a> and revoke its access at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+  </ol>
+
+  <h2>6. Data retention</h2>
+  <p>Data on your phone is kept until you delete it or remove the app. Cached place lookups expire after a limited time. Dismissed notification-based expenses are removed automatically after about 30 days. A Google Drive backup stays in your Drive until you delete it.</p>
+
+  <h2>7. Children</h2>
+  <p>Time In Place is not directed to children under 13 and we do not knowingly collect their data.</p>
+
+  <h2>8. Security</h2>
+  <p>Data is stored in the app's private storage on your device and is protected by Android's app sandbox. Network requests use HTTPS. No system is perfectly secure, so keep your device locked and updated.</p>
+
+  <h2>9. Changes to this policy</h2>
+  <p>If the app's data practices change, this page will be updated and the date at the top changed. Material changes will also be reflected in the app's permission and settings screens.</p>
+
+  <h2>10. Contact</h2>
+  <p>Questions or requests: <a href="mailto:lt.trung2001@gmail.com">lt.trung2001@gmail.com</a>.</p>
+</main>
+</body>
+</html>
