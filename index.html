@@ -28,7 +28,7 @@
 <body>
 <main>
   <h1>Time In Place – Privacy Policy</h1>
-  <p class="meta">Last updated: 15 October 2026 · App package: <code>com.trunglabs.timeinplace</code> · Developer: TrungLabs</p>
+  <p class="meta">Last updated: 16 October 2026 · App package: <code>com.trunglabs.timeinplace</code> · Developer: TrungLabs</p>
 
   <p>Time In Place is an Android app that automatically records the places you stay at and for how long, and summarises your days and weeks. This policy explains what data the app handles, where it goes, and the choices you have. In short: <strong>your data stays on your phone</strong>; the only copy that can leave it is the backup you choose to keep in your own Google Drive.</p>
 
@@ -37,7 +37,7 @@
     <ul>
       <li>We (the developer) run <strong>no server</strong> that receives your location history, photos, notes or expenses.</li>
       <li>There are <strong>no ads</strong>, no analytics SDKs and no sale or sharing of your data with advertisers or data brokers.</li>
-      <li>Looking up place names online and signing in to Google for backup are <strong>optional</strong>; the app works without them.</li>
+      <li>Looking up place names online, signing in to Google for backup, reading payment notifications, photo suggestions and QR sharing are <strong>optional</strong>; the app works without them.</li>
     </ul>
   </div>
 
@@ -70,6 +70,16 @@
       <td>On your phone; included in backup if enabled.</td>
     </tr>
     <tr>
+      <td><strong>Camera</strong> (optional): live camera frames while the QR scan screen is open</td>
+      <td>To read QR codes when you receive a share from another person.</td>
+      <td>Frames are read on your phone to find QR codes and are not stored or uploaded. The camera is used only while the scan screen is open.</td>
+    </tr>
+    <tr>
+      <td><strong>Shares you send or receive</strong> (optional): the places, times, categories and, if you choose, coordinates, notes and expenses of one day, week or month</td>
+      <td>To let you share a period of your journal with another person, and to show what someone shared with you.</td>
+      <td>What you send is turned into an animated QR image (GIF) that you share yourself. What you receive is stored on your phone only, encrypted, kept separate from your own journal, excluded from backups, and can be deleted at any time.</td>
+    </tr>
+    <tr>
       <td><strong>Settings</strong> (accuracy mode, appearance, reminders, etc.)</td>
       <td>To make the app behave as you chose.</td>
       <td>On your phone; most are included in backup.</td>
@@ -88,11 +98,16 @@
   <p>Signing in with Google is optional and only needed for backup. If you sign in and turn backup on, the app stores a backup file (and copies of photos you attached to visits) in the hidden app-data folder of <strong>your own</strong> Google Drive. The app requests only the <code>drive.appdata</code> permission, so it cannot see any other file in your Drive. The backup includes: places, visits, notes, expenses, goals, privacy rules, trips, most settings, the list of removed photos, cached place lookups, and photos attached to visits. It does <strong>not</strong> include raw location points, your account details, the online-lookup choice or pause state. Backups can be sent only over Wi-Fi if you choose. We, the developer, cannot access this backup.</p>
   <p>You can remove the backup at any time from Settings → Google Drive backup → "Delete backup on Drive".</p>
 
+  <h3>2.4 Sharing a period by QR code (optional)</h3>
+  <p>You can create a GIF of QR codes that contains a day, week or month (at most one month) of your journal and give it to someone else. You choose what it contains: places, times and categories, and optionally coordinates, notes and expenses. The content is compressed and encrypted on your phone with a key derived from a PIN that you set; the first QR code only states how many codes there are and their random identifiers. Whoever receives the GIF needs the PIN to read it. The PIN is shown to you so that you can tell the recipient; it is not sent anywhere. The GIF leaves your phone only when you share it yourself (for example in a chat app); we do not upload it and we do not receive it. Anyone who has both the GIF and the PIN can read the content, so share the PIN only with the person you mean to share with.</p>
+  <p>When you receive a share, it is stored on your phone only, encrypted with a key held by the Android Keystore. It is shown as read-only, is not added to your own journal or summaries, is not included in backups, and you can delete it at any time.</p>
+
   <h2>3. What we do not do</h2>
   <ul>
     <li>We do not sell your data, share it for advertising, or use it for profiling.</li>
     <li>We do not upload your location history, photos, notes or expenses to any server operated by the developer.</li>
     <li>We do not read notifications of apps you have not chosen, and we do not store the content of notifications or full account numbers.</li>
+    <li>Trial mode uses sample data made on your phone. It records nothing about you, sends nothing anywhere and can be exited at any time, which deletes the sample data.</li>
   </ul>
 
   <h2>4. Your choices and rights</h2>
