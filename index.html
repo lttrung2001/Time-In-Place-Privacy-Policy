@@ -37,7 +37,7 @@
     <ul>
       <li>We (the developer) run <strong>no server</strong> that receives your location history, photos, notes or expenses.</li>
       <li>There are <strong>no ads</strong> and no sale or sharing of your data with advertisers or data brokers.</li>
-      <li>Anonymous <strong>usage statistics and crash reports</strong> (Google Firebase) are <strong>off until you switch them on</strong> in Settings. They never contain your location, places, money or notes. See section 2.5.</li>
+      <li>The app sends <strong>anonymous crash reports</strong> (Google Firebase Crashlytics), and, <strong>only if you switch it on</strong> in Settings, anonymous <strong>usage statistics</strong> (Google Analytics for Firebase). Neither contains your location, places, money or notes. See section 2.5.</li>
       <li>Looking up place names online, signing in to Google for backup, reading payment notifications, photo suggestions and QR sharing are <strong>optional</strong>; the app works without them.</li>
     </ul>
   </div>
@@ -81,9 +81,9 @@
       <td>What you send is turned into an animated QR image (GIF) that you share yourself. What you receive is stored on your phone only, encrypted, kept separate from your own journal, excluded from backups, and can be deleted at any time.</td>
     </tr>
     <tr>
-      <td><strong>Anonymous usage statistics and crash reports</strong> (optional, off by default): which features are used, technical error reports, app and Android version, device model, language, a randomly generated app-instance identifier</td>
-      <td>To find and fix bugs, keep the app stable and decide what to improve.</td>
-      <td>Sent to Google Firebase (Analytics and Crashlytics) as our service provider, only if you turn it on. Never contains your location, places, amounts, notes or photos. See section 2.5.</td>
+      <td><strong>Crash reports and, if you switch it on, anonymous usage statistics</strong>: technical error reports, app and Android version, device model, language, which features are used, a randomly generated app-instance identifier</td>
+      <td>To find and fix bugs, keep the app stable and, with usage statistics, decide what to improve.</td>
+      <td>Sent to Google Firebase (Crashlytics, and Analytics if you turned it on) as our service provider. Never contains your location, places, amounts, notes or photos. See section 2.5.</td>
     </tr>
     <tr>
       <td><strong>Settings</strong> (accuracy mode, appearance, reminders, etc.)</td>
@@ -108,12 +108,12 @@
   <p>You can create a GIF of QR codes that contains a day, week or month (at most one month) of your journal and give it to someone else. You choose what it contains: places, times and categories, and optionally coordinates, notes and expenses. The content is compressed and encrypted on your phone with a key derived from a PIN that you set; the first QR code only states how many codes there are and their random identifiers. Whoever receives the GIF needs the PIN to read it. The PIN is shown to you so that you can tell the recipient; it is not sent anywhere. The GIF leaves your phone only when you share it yourself (for example in a chat app); we do not upload it and we do not receive it. Anyone who has both the GIF and the PIN can read the content, so share the PIN only with the person you mean to share with.</p>
   <p>When you receive a share, it is stored on your phone only, encrypted with a key held by the Android Keystore. It is shown as read-only, is not added to your own journal or summaries, is not included in backups, and you can delete it at any time.</p>
 
-  <h3>2.5 Anonymous usage statistics and crash reports (optional, off by default)</h3>
-  <p>If you turn on "Usage statistics and crash reports" in Settings, the app uses <strong>Google Analytics for Firebase</strong> and <strong>Firebase Crashlytics</strong>, provided by Google, to learn which features are used and to find crashes. This is off until you switch it on, it is never active in trial mode, and you can switch it off at any time in Settings. The setting stays on your phone and is not part of your Google Drive backup.</p>
-  <p><strong>Usage statistics.</strong> Each event has a fixed name and a few coarse values, for example "a visit was confirmed (automatically or by you)", "a goal was created (at least or at most, per day, week or month)", "the summary was opened (week)", "a share was created (covering 2 to 7 days)", the name of a screen (such as "Settings"), the interface language, the theme, the recording mode and accuracy you chose, and whether a permission was granted or denied. Counts and durations are grouped into ranges.</p>
+  <h3>2.5 Crash reports and anonymous usage statistics (Google Firebase)</h3>
+  <p>The app uses two services provided by Google. <strong>Firebase Crashlytics</strong> sends a crash report when the app crashes or hits an unexpected error; this is on and there is no switch for it in the app. <strong>Google Analytics for Firebase</strong> counts which features are used; this is <strong>off until you turn on "Usage statistics" in Settings</strong>, and you can switch it off again at any time (the setting stays on your phone and is not part of your Google Drive backup). Neither is active in trial mode.</p>
+  <p><strong>Usage statistics (optional).</strong> Each event has a fixed name and a few coarse values, for example "a visit was confirmed (automatically or by you)", "a goal was created (at least or at most, per day, week or month)", "the summary was opened (week)", "a share was created (covering 2 to 7 days)", the name of a screen (such as "Settings"), the interface language, the theme, the recording mode and accuracy you chose, and whether a permission was granted or denied. Counts and durations are grouped into ranges.</p>
   <p><strong>Crash reports.</strong> When the app crashes or hits an unexpected error, a report is sent with the technical error and stack trace, the app version, Android version and device model, whether the app was in the foreground, the app's internal mode, the chosen accuracy mode, the database version and the interface language.</p>
   <p><strong>What is never included:</strong> your location or coordinates, place names or addresses, visit history, amounts of money, notification text, photos or file names, the PIN of a shared QR code, your e-mail or Google account, or anything you typed. We do not set a user identifier, we turn off the advertising identifier and ad personalization, and the data is not used for advertising or sold.</p>
-  <p>Firebase creates a randomly generated app-instance identifier to count devices. Google processes the data as our service provider; see the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a>. Event data is kept for up to 14 months and crash reports for up to 90 days. Switching it off stops new events; to reset the identifier, clear the app's storage or reinstall.</p>
+  <p>Firebase creates a randomly generated app-instance identifier to count devices. Google processes the data as our service provider; see the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a>. Event data is kept for up to 14 months and crash reports for up to 90 days. Switching usage statistics off stops new events; to reset the identifier, clear the app's storage or reinstall.</p>
 
   <h2>3. What we do not do</h2>
   <ul>
@@ -129,7 +129,7 @@
     <li><strong>Pause or restrict recording:</strong> use the quick pause or time/place privacy rules in Settings; no location is stored during those periods.</li>
     <li><strong>Photos and notifications:</strong> both are opt-in and can be turned off at any time in Settings; notification access can also be revoked in Android Settings.</li>
     <li><strong>Online lookup and backup:</strong> optional and can be turned off; signing out stops backup and keeps data on your phone.</li>
-    <li><strong>Usage statistics and crash reports:</strong> optional and off by default; switch them on or off at any time in Settings.</li>
+    <li><strong>Usage statistics:</strong> optional and off by default; switch them on or off at any time in Settings. <strong>Crash reports</strong> are anonymous and always on; to stop them you can uninstall the app or contact us.</li>
     <li><strong>Access and deletion:</strong> all your data is inside the app and can be deleted there (delete a visit's note, expenses or photos, delete a place). Uninstalling the app or clearing its storage in Android Settings removes everything stored on the phone.</li>
   </ul>
 
@@ -141,7 +141,7 @@
   </ol>
 
   <h2>6. Data retention</h2>
-  <p>Data on your phone is kept until you delete it or remove the app. Cached place lookups expire after a limited time. Dismissed notification-based expenses are removed automatically after about 30 days. If you turn on usage statistics, Google Firebase keeps them for up to 14 months and crash reports for up to 90 days. A Google Drive backup stays in your Drive until you delete it.</p>
+  <p>Data on your phone is kept until you delete it or remove the app. Cached place lookups expire after a limited time. Dismissed notification-based expenses are removed automatically after about 30 days. Google Firebase keeps crash reports for up to 90 days and, if you turned them on, usage statistics for up to 14 months. A Google Drive backup stays in your Drive until you delete it.</p>
 
   <h2>7. Children</h2>
   <p>Where It Went is not directed to children under 13 and we do not knowingly collect their data.</p>
