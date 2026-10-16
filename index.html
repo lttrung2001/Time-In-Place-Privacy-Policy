@@ -30,7 +30,7 @@
   <h1>Where It Went – Privacy Policy</h1>
   <p class="meta">Last updated: 16 October 2026 · App package: <code>com.trunglabs.timeinplace</code> · Developer: TrungLabs</p>
 
-  <p>Where It Went is an Android app that automatically records the places you stay at and for how long, and summarises your days and weeks. This policy explains what data the app handles, where it goes, and the choices you have. In short: <strong>your data stays on your phone</strong>; the only copy that can leave it is the backup you choose to keep in your own Google Drive.</p>
+  <p>Where It Went is an Android app that automatically records the places you stay at and for how long, and summarises your days and weeks. This policy explains what data the app handles, where it goes, and the choices you have. In short: <strong>your location history and journal stay on your phone</strong>; the only copy that can leave it is the backup you choose to keep in your own Google Drive. The maps in the app are drawn with Google Maps, which requests map tiles from Google (see section 2.2), and a few features you turn on send limited data as described below.</p>
 
   <div class="card">
     <h2>Summary</h2>
@@ -63,7 +63,7 @@
     <tr>
       <td><strong>Payment notifications</strong> (optional): the amount, direction (spent / received), merchant and time found in notifications of the banking or wallet apps <em>you choose</em></td>
       <td>To suggest expenses and attach them to the place where they happened.</td>
-      <td>Processed on your phone. The full text of the notification is not stored. Only the extracted amount, direction, merchant, time and source app are kept, and included in backups. To check that a transaction is read correctly, the app also keeps, on your phone only, the last four digits of the account named in the notification and the latest balance shown there. These two values are not included in backups and are deleted when you turn off and delete notification data.</td>
+      <td>Processed on your phone. To let you choose which apps to read, the app reads the list of apps installed on your phone (names, icons and package names); this list is used only to show the choices, is not stored apart from the apps you select, and is never sent anywhere. The full text of the notification is not stored. Only the extracted amount, direction, merchant, time and source app are kept, and included in backups. To check that a transaction is read correctly, the app also keeps, on your phone only, the last four digits of the account named in the notification and the latest balance shown there. These two values are not included in backups and are deleted when you turn off and delete notification data.</td>
     </tr>
     <tr>
       <td><strong>Expenses you enter</strong> (amount, currency, note, time)</td>
@@ -86,19 +86,19 @@
       <td>Sent to Google Firebase (Crashlytics, and Analytics if you turned it on) as our service provider. Never contains your location, places, amounts, notes or photos. See section 2.5.</td>
     </tr>
     <tr>
-      <td><strong>Settings</strong> (accuracy mode, appearance, reminders, etc.)</td>
-      <td>To make the app behave as you chose.</td>
-      <td>On your phone; most are included in backup.</td>
+      <td><strong>Settings</strong> (accuracy mode, appearance, reminders, etc.) and a few numbers the app learns about your phone's location accuracy</td>
+      <td>To make the app behave as you chose, and to tell more reliably when you are staying somewhere or moving.</td>
+      <td>On your phone. Most settings are included in backup; the learned accuracy numbers are not, and they are never sent anywhere.</td>
     </tr>
   </table>
 
   <h2>2. Data that leaves your phone</h2>
   <h3>2.1 Place-name lookup (optional, off by default)</h3>
-  <p>If you turn on "Look up place names online", the coordinates of a place where you just stayed (and nothing else) are sent to a map data provider to find nearby place names: <strong>Microsoft Azure Maps</strong>, or, if that service is unavailable or its monthly allowance for your device is used up, <strong>OpenStreetMap services (Overpass and Nominatim)</strong>. Requests are made only once per new visit and results are cached on your phone. When using OpenStreetMap services while you are signed in with Google, your Google email address is added to the request's User-Agent as a contact address, as that service's usage policy asks. If you leave the lookup off, no coordinates are sent for this purpose.</p>
+  <p>If you turn on "Look up place names online", the coordinates of a place where you just stayed (and nothing else) are sent to a map data provider to find nearby place names: <strong>Microsoft Azure Maps</strong>, or, if that service is unavailable or its monthly allowance for your device is used up, <strong>OpenStreetMap services (Overpass and Nominatim)</strong>. Requests are made only once per new visit and results are cached on your phone. When using OpenStreetMap services while you are signed in with Google, your Google email address is added to the request's User-Agent as a contact address, as that service's usage policy asks. If you leave the lookup off, no coordinates are sent for this purpose. This switch does not affect the map display described in section 2.2.</p>
   <p>See <a href="https://www.microsoft.com/privacy/privacystatement">Microsoft's privacy statement</a> and the <a href="https://osmfoundation.org/wiki/Privacy_Policy">OpenStreetMap Foundation privacy policy</a>.</p>
 
   <h3>2.2 Maps display (Google Maps)</h3>
-  <p>When a map is shown, the Google Maps SDK loads map tiles from Google. Google may receive technical information such as your IP address and device information as described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. The app does not send your visit history to Google Maps.</p>
+  <p>Maps in the app (the places map, confirming a visit, adding or editing a place, privacy rules by place) are always shown with the Google Maps SDK, whether or not "Look up place names online" is on. To draw a map, the SDK requests map tiles from Google for the area you are viewing, so Google receives technical information such as your IP address, device information and the map area requested, as described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. The app does not send your visit history, place names or notes to Google Maps.</p>
 
   <h3>2.3 Backup to Google Drive (optional)</h3>
   <p>Signing in with Google is optional and only needed for backup. If you sign in and turn backup on, the app stores a backup file (and copies of photos you attached to visits) in the hidden app-data folder of <strong>your own</strong> Google Drive. The app requests only the <code>drive.appdata</code> permission, so it cannot see any other file in your Drive. The backup includes: places, visits, notes, expenses, goals, privacy rules, trips, most settings, the list of removed photos, cached place lookups, and photos attached to visits. It does <strong>not</strong> include raw location points, your account details, the online-lookup choice or pause state. Backups can be sent only over Wi-Fi if you choose. We, the developer, cannot access this backup.</p>
