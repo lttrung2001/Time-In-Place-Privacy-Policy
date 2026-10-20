@@ -28,7 +28,7 @@
 <body>
 <main>
   <h1>Where It Went – Privacy Policy</h1>
-  <p class="meta">Last updated: 16 October 2026 · App package: <code>com.trunglabs.timeinplace</code> · Developer: TrungLabs</p>
+  <p class="meta">Last updated: 20 October 2026 · App package: <code>com.trunglabs.timeinplace</code> · Developer: TrungLabs</p>
 
   <p>Where It Went is an Android app that automatically records the places you stay at and for how long, and summarises your days and weeks. This policy explains what data the app handles, where it goes, and the choices you have. In short: <strong>your location history and journal stay on your phone</strong>; the only copy that can leave it is the backup you choose to keep in your own Google Drive. The maps in the app are drawn with Google Maps, which requests map tiles from Google (see section 2.2), and a few features you turn on send limited data as described below.</p>
 
@@ -38,7 +38,7 @@
       <li>We (the developer) run <strong>no server</strong> that receives your location history, photos, notes or expenses.</li>
       <li>There are <strong>no ads</strong> and no sale or sharing of your data with advertisers or data brokers.</li>
       <li>The app sends <strong>anonymous crash reports</strong> (Google Firebase Crashlytics), and, <strong>only if you switch it on</strong> in Settings, anonymous <strong>usage statistics</strong> (Google Analytics for Firebase). Neither contains your location, places, money or notes. See section 2.5.</li>
-      <li>Looking up place names online, signing in to Google for backup, reading payment notifications, photo suggestions and QR sharing are <strong>optional</strong>; the app works without them.</li>
+      <li>Looking up place names online, signing in to Google for backup, reading payment notifications, photo suggestions, QR sharing and "Pause when still" (physical activity) are <strong>optional</strong>; the app works without them.</li>
     </ul>
   </div>
 
@@ -49,6 +49,11 @@
       <td><strong>Location</strong> (precise and approximate, including in the background when the app is closed, if you allow it)</td>
       <td>To detect when you stay somewhere, for how long, and to draw your journal, summaries and map. Background access is what lets the journal fill in without you opening the app.</td>
       <td>On your phone only (local database). Raw location points are never uploaded or included in backups.</td>
+    </tr>
+    <tr>
+      <td><strong>Physical activity</strong> (optional, Android "Physical activity" permission): only the kind of movement the phone's motion sensor reports (still, walking, running, cycling, in a vehicle)</td>
+      <td>For "Pause when still": while you are still, the app takes your location less often (at most every 15 minutes) to save battery, and goes back to the normal rate when you move.</td>
+      <td>Used on your phone at the moment it arrives, only to choose how often to take your location. No history of your movement is stored, it is not included in backups, and it is never sent anywhere or used for ads.</td>
     </tr>
     <tr>
       <td><strong>Places and notes you create</strong>: names, categories, radius, visit notes, goals, privacy rules, trips</td>
@@ -126,6 +131,7 @@
   <h2>4. Your choices and rights</h2>
   <ul>
     <li><strong>Location:</strong> change or revoke location and background location in Android Settings → Apps → Where It Went → Permissions. The app then records only while open, or not at all.</li>
+    <li><strong>Physical activity:</strong> optional; turn "Pause when still" off in Settings, or revoke "Physical activity" in Android Settings → Apps → Where It Went → Permissions. The app then takes your location at the rate of the accuracy mode you chose.</li>
     <li><strong>Pause or restrict recording:</strong> use the quick pause or time/place privacy rules in Settings; no location is stored during those periods.</li>
     <li><strong>Photos and notifications:</strong> both are opt-in and can be turned off at any time in Settings; notification access can also be revoked in Android Settings.</li>
     <li><strong>Online lookup and backup:</strong> optional and can be turned off; signing out stops backup and keeps data on your phone.</li>
