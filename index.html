@@ -28,7 +28,7 @@
 <body>
 <main>
   <h1>Where It Went – Privacy Policy</h1>
-  <p class="meta">Last updated: 20 October 2026 · App package: <code>com.trunglabs.timeinplace</code> · Developer: TrungLabs</p>
+  <p class="meta">Last updated: 21 October 2026 · App package: <code>com.trunglabs.timeinplace</code> · Developer: TrungLabs</p>
 
   <p>Where It Went is an Android app that automatically records the places you stay at and for how long, and summarises your days and weeks. This policy explains what data the app handles, where it goes, and the choices you have. In short: <strong>your location history and journal stay on your phone</strong>; the only copy that can leave it is the backup you choose to keep in your own Google Drive. The maps in the app are drawn with Google Maps, which requests map tiles from Google (see section 2.2), and a few features you turn on send limited data as described below.</p>
 
@@ -52,8 +52,8 @@
     </tr>
     <tr>
       <td><strong>Physical activity</strong> (optional, Android "Physical activity" permission): only the kind of movement the phone's motion sensor reports (still, walking, running, cycling, in a vehicle)</td>
-      <td>For "Pause when still": while you are still, the app takes your location less often (at most every 15 minutes) to save battery, and goes back to the normal rate when you move.</td>
-      <td>Used on your phone at the moment it arrives, only to choose how often to take your location. No history of your movement is stored, it is not included in backups, and it is never sent anywhere or used for ads.</td>
+      <td>For "Pause when still": while you are still, the app takes your location less often (at most every 15 minutes) to save battery, and goes back to the normal rate when you move. The kind of movement is also used to name your trips between places in the journal ("Walking", "By vehicle").</td>
+      <td>On your phone: each change of movement kind is stored with its time, next to your visits. Included in your Google Drive backup if you turn backup on. Never sent anywhere else or used for ads.</td>
     </tr>
     <tr>
       <td><strong>Places and notes you create</strong>: names, categories, radius, visit notes, goals, privacy rules, trips</td>
@@ -106,7 +106,7 @@
   <p>Maps in the app (the places map, confirming a visit, adding or editing a place, privacy rules by place) are always shown with the Google Maps SDK, whether or not "Look up place names online" is on. To draw a map, the SDK requests map tiles from Google for the area you are viewing, so Google receives technical information such as your IP address, device information and the map area requested, as described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. The app does not send your visit history, place names or notes to Google Maps.</p>
 
   <h3>2.3 Backup to Google Drive (optional)</h3>
-  <p>Signing in with Google is optional and only needed for backup. If you sign in and turn backup on, the app stores a backup file (and copies of photos you attached to visits) in the hidden app-data folder of <strong>your own</strong> Google Drive. The app requests only the <code>drive.appdata</code> permission, so it cannot see any other file in your Drive. The backup includes: places, visits, notes, expenses, goals, privacy rules, trips, most settings, the list of removed photos, cached place lookups, and photos attached to visits. It does <strong>not</strong> include raw location points, your account details, the online-lookup choice or pause state. Backups can be sent only over Wi-Fi if you choose. We, the developer, cannot access this backup.</p>
+  <p>Signing in with Google is optional and only needed for backup. If you sign in and turn backup on, the app stores a backup file (and copies of photos you attached to visits) in the hidden app-data folder of <strong>your own</strong> Google Drive. The app requests only the <code>drive.appdata</code> permission, so it cannot see any other file in your Drive. The backup includes: places, visits, notes, expenses, goals, privacy rules, trips, movement kinds (walking, cycling, in a vehicle) and their times, most settings, the list of removed photos, cached place lookups, and photos attached to visits. It does <strong>not</strong> include raw location points, your account details, the online-lookup choice or pause state. Backups can be sent only over Wi-Fi if you choose. We, the developer, cannot access this backup.</p>
   <p>You can remove the backup at any time from Settings → Google Drive backup → "Delete backup on Drive".</p>
 
   <h3>2.4 Sharing a period by QR code (optional)</h3>
