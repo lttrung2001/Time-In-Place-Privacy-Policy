@@ -28,7 +28,7 @@
 <body>
 <main>
   <h1>Where It Went – Privacy Policy</h1>
-  <p class="meta">Last updated: 21 October 2026 · App package: <code>com.trunglabs.timeinplace</code> · Developer: TrungLabs</p>
+  <p class="meta">Last updated: 23 October 2026 · App package: <code>com.trunglabs.timeinplace</code> · Developer: TrungLabs</p>
 
   <p>Where It Went is an Android app that automatically records the places you stay at and for how long, and summarises your days and weeks. This policy explains what data the app handles, where it goes, and the choices you have. In short: <strong>your location history and journal stay on your phone</strong>; the only copy that can leave it is the backup you choose to keep in your own Google Drive. The maps in the app are drawn with Google Maps, which requests map tiles from Google (see section 2.2), and a few features you turn on send limited data as described below.</p>
 
@@ -38,7 +38,7 @@
       <li>We (the developer) run <strong>no server</strong> that receives your location history, photos, notes or expenses.</li>
       <li>There are <strong>no ads</strong> and no sale or sharing of your data with advertisers or data brokers.</li>
       <li>The app sends <strong>anonymous crash reports</strong> (Google Firebase Crashlytics), and, <strong>only if you switch it on</strong> in Settings, anonymous <strong>usage statistics</strong> (Google Analytics for Firebase). Neither contains your location, places, money or notes. See section 2.5.</li>
-      <li>Looking up place names online, signing in to Google for backup, reading payment notifications, photo suggestions, QR sharing and "Pause when still" (physical activity) are <strong>optional</strong>; the app works without them.</li>
+      <li>Looking up place names online, signing in to Google for backup, reading payment notifications, AI analysis with Gemini, receipt scanning, photo suggestions, QR sharing and "Pause when still" (physical activity) are <strong>optional</strong>; the app works without them.</li>
     </ul>
   </div>
 
@@ -68,7 +68,7 @@
     <tr>
       <td><strong>Payment notifications</strong> (optional): the amount, direction (spent / received), merchant and time found in notifications of the banking or wallet apps <em>you choose</em></td>
       <td>To suggest expenses and attach them to the place where they happened.</td>
-      <td>Processed on your phone. To let you choose which apps to read, the app reads the list of apps installed on your phone (names, icons and package names); this list is used only to show the choices, is not stored apart from the apps you select, and is never sent anywhere. The full text of the notification is not stored. Only the extracted amount, direction, merchant, time and source app are kept, and included in backups. To check that a transaction is read correctly, the app also keeps, on your phone only, the last four digits of the account named in the notification and the latest balance shown there. These two values are not included in backups and are deleted when you turn off and delete notification data.</td>
+      <td>Read with the app's basic reading on your phone, or, with a subscription and AI analysis on, by Google Gemini (see 2.6). To let you choose which apps to read, the app reads the list of apps installed on your phone (names, icons and package names); this list is used only to show the choices, is not stored apart from the apps you select, and is never sent anywhere. The full text of the notification is not stored. Only the extracted amount, direction, merchant, time and source app are kept, and included in backups. To check that a transaction is read correctly, the app also keeps, on your phone only, the last four digits of the account named in the notification and the latest balance shown there. These two values are not included in backups and are deleted when you turn off and delete notification data.</td>
     </tr>
     <tr>
       <td><strong>Expenses you enter</strong> (amount, currency, note, time)</td>
@@ -76,9 +76,9 @@
       <td>On your phone; included in backup if enabled.</td>
     </tr>
     <tr>
-      <td><strong>Camera</strong> (optional): live camera frames while the QR scan screen is open</td>
+      <td><strong>Camera</strong> (optional): live camera frames while the QR scan screen is open, and a photo when you scan a receipt</td>
       <td>To read QR codes when you receive a share from another person.</td>
-      <td>Frames are read on your phone to find QR codes and are not stored or uploaded. The camera is used only while the scan screen is open.</td>
+      <td>Frames are read on your phone to find QR codes, and receipt photos to read their text; neither is stored. With Pro and AI analysis on, a smaller copy of a receipt photo you scan is sent for analysis (see 2.6). The camera is used only while a scan screen is open.</td>
     </tr>
     <tr>
       <td><strong>Shares you send or receive</strong> (optional): the places, times, categories and, if you choose, coordinates, notes and expenses of one day, week or month</td>
@@ -120,7 +120,24 @@
   <p><strong>What is never included:</strong> your location or coordinates, place names or addresses, visit history, amounts of money, notification text, photos or file names, the PIN of a shared QR code, your e-mail or Google account, or anything you typed. We do not set a user identifier, we turn off the advertising identifier and ad personalization, and the data is not used for advertising or sold.</p>
   <p>Firebase creates a randomly generated app-instance identifier to count devices. Google processes the data as our service provider; see the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a>. Event data is kept for up to 14 months and crash reports for up to 90 days. Switching usage statistics off stops new events; to reset the identifier, clear the app's storage or reinstall.</p>
 
-  <h2>3. What we do not do</h2>
+    <h3>2.6 AI analysis with Google Gemini (Pro and Ultra subscriptions, optional, off by default)</h3>
+  <p>AI analysis is part of the paid <strong>Where It Went Pro</strong> and <strong>Ultra</strong> subscriptions. Without a subscription, notifications and receipts are read with the app's basic reading and nothing is sent for this purpose. With a subscription, if you turn on "AI analysis" in Settings (after a screen that explains it), data is sent to <strong>Google Gemini</strong> through Firebase AI Logic as follows:</p>
+  <ul>
+    <li><strong>Notifications (Pro and Ultra):</strong> the text of notifications from the apps you chose for "Spending from notifications" is sent <strong>as it is</strong> (it may include account or card numbers, balances and references shown in the notification), to find the amount, the currency, whether money was spent or received, the category and a short summary, and to tell whether it is a transaction at all (advertisements, loan offers, codes and reminders are then not recorded).</li>
+    <li><strong>Receipts (Pro and Ultra):</strong> the photo of a receipt you scan is sent <strong>made smaller</strong> (about 1024 pixels on the long side) to read the total, the currency, the category, the shop and the time printed.</li>
+    <li><strong>Category suggestions (Ultra):</strong> for expenses without a category, the note, the name of the place, the amount and the time of each (up to 30 at a time); no coordinates.</li>
+    <li><strong>Place suggestions (Ultra):</strong> when you confirm a stay, the names and types of the nearby places the app found, the time of day, the weekday and the length of the stay; no coordinates.</li>
+    <li><strong>Period summaries (Ultra):</strong> aggregated numbers of the period you view (hours by type of place, number of places, time out of home and on the move, spending by category, and the same for the previous period); no place names, notes or coordinates.</li>
+  </ul>
+  <p>Google processes this data as our service provider under the paid Gemini API terms, which do not allow Google to use it to improve its products. The app keeps only the results (amounts, categories, short summaries and suggestions), never the notification text or the photo; a period summary is kept on your phone so the same numbers are not sent twice. Requests go over an encrypted connection and are protected by Firebase App Check. Turn the switch off, or let the subscription end, and nothing more is sent. The setting is not part of your Google Drive backup. See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and the <a href="https://ai.google.dev/gemini-api/terms">Gemini API terms</a>.</p>
+
+    <h3>2.7 Purchases</h3>
+  <p>The Pro and Ultra subscriptions are bought, switched, renewed and cancelled through <strong>Google Play</strong>, which handles your payment details; the developer never sees them. The app only asks Google Play which subscription this Google account has, and keeps that answer on your phone. Free trials are granted by Google Play, one per Google account.</p>
+
+    <h3>2.8 Assistants on your phone (App Functions, Android 16 and later)</h3>
+  <p>On Android 16 and later, the app offers a few actions to assistants on your phone that the system allows to use them (for example Google Gemini, with the system's App Functions permission): add a transaction, total your spending for today, this week, month or year, sum up your time (places visited, hours by type of place, the place you are at now), and pause or resume recording. These actions run in the app on your phone when the assistant asks; what the assistant does with the answer is covered by the assistant's own privacy policy. The app sends nothing anywhere for this purpose itself. You can stop it by not using such an assistant or by revoking its permissions in Android settings.</p>
+
+<h2>3. What we do not do</h2>
   <ul>
     <li>We do not sell your data, share it for advertising, or use it for profiling.</li>
     <li>We do not upload your location history, photos, notes or expenses to any server operated by the developer, and we do not put them in usage statistics or crash reports.</li>
