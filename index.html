@@ -1,187 +1,95 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Place Diary – Privacy Policy</title>
-<meta name="description" content="Privacy policy of the Place Diary Android app.">
-<style>
-  :root { --bg:#F3F5F2; --card:#FFFFFF; --text:#16201C; --muted:#5B6862; --accent:#0B6E5B; --border:#DDE3DE; }
-  @media (prefers-color-scheme: dark) {
-    :root { --bg:#0F1512; --card:#1A221E; --text:#E8EEEA; --muted:#9AA9A2; --accent:#3DBFA3; --border:#2B3631; }
-  }
-  * { box-sizing: border-box; }
-  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
-  main { max-width:760px; margin:0 auto; padding:32px 20px 64px; }
-  h1 { font-size:30px; line-height:1.25; margin:0 0 4px; }
-  h2 { font-size:20px; margin:32px 0 8px; }
-  p, li { color:var(--text); }
-  .meta { color:var(--muted); margin:0 0 24px; }
-  .card { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:4px 20px; margin:16px 0; }
-  table { width:100%; border-collapse:collapse; margin:12px 0; font-size:15px; }
-  th, td { text-align:left; vertical-align:top; padding:8px 10px; border-bottom:1px solid var(--border); }
-  th { color:var(--muted); font-weight:600; }
-  a { color:var(--accent); }
-  code { background:var(--card); border:1px solid var(--border); border-radius:6px; padding:1px 5px; font-size:14px; }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Place Diary: Time &amp; Money – Privacy Policy</title>
+  <meta name="description" content="Privacy policy for the Place Diary: Time & Money Android app.">
+  <style>
+    :root { --bg:#f3f5f2; --card:#fff; --text:#16201c; --muted:#5b6862; --accent:#0b6e5b; --border:#dde3de; }
+    @media (prefers-color-scheme: dark) { :root { --bg:#0f1512; --card:#1a221e; --text:#e8eeea; --muted:#9aa9a2; --accent:#3dbfa3; --border:#2b3631; } }
+    * { box-sizing:border-box; } body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+    main { max-width:800px; margin:0 auto; padding:32px 20px 64px; } h1 { font-size:30px; line-height:1.25; margin:0 0 4px; } h2 { font-size:21px; margin:34px 0 8px; } h3 { font-size:17px; margin:24px 0 6px; }
+    .meta { color:var(--muted); margin:0 0 24px; } .card { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:4px 20px; margin:16px 0; }
+    table { width:100%; border-collapse:collapse; margin:12px 0; font-size:15px; } th,td { text-align:left; vertical-align:top; padding:9px 10px; border-bottom:1px solid var(--border); } th { color:var(--muted); font-weight:650; }
+    a { color:var(--accent); } code { background:var(--card); border:1px solid var(--border); border-radius:6px; padding:1px 5px; font-size:14px; }
+  </style>
 </head>
 <body>
 <main>
-  <h1>Place Diary – Privacy Policy</h1>
-  <p class="meta">Last updated: 4 November 2026 · App package: <code>com.trunglabs.timeinplace</code> · Developer: TrungLabs</p>
+  <h1>Place Diary: Time &amp; Money – Privacy Policy</h1>
+  <p class="meta">Last updated: 6 November 2026 · Android package: <code>com.trunglabs.timeinplace</code> · Developer: TrungLabs</p>
+  <p>Place Diary helps you keep a private journal of places, time and spending. This policy explains the data the app handles, why it handles it, where it goes, and the controls available to you.</p>
 
-  <p>Place Diary is an Android app that automatically records the places you stay at and for how long, and summarises your days and weeks. This policy explains what data the app handles, where it goes, and the choices you have. In short: <strong>your location history and journal stay on your phone</strong>; the only copy that can leave it is the backup you choose to keep in your own Google Drive. The maps in the app are drawn with Google Maps, which requests map tiles from Google (see section 2.2); place names are looked up online from the coordinates of your stays (section 2.1); and a few features send limited data as described below.</p>
+  <div class="card"><h2>At a glance</h2><ul>
+    <li>Your location history, journal, notes, expenses, photos and AI chat history are stored on your device by default.</li>
+    <li>We do not operate a server that receives your location history, journal, notes, expenses or attached photos.</li>
+    <li>Optional features can send data to Google Drive, Google Maps, Huawei Petal Maps, Google Firebase/Gemini, or another app or person you choose. The relevant sections below explain exactly what is sent.</li>
+    <li>There are no ads. We do not sell personal data or use it for advertising or cross-app advertising profiling.</li>
+  </ul></div>
 
-  <div class="card">
-    <h2>Summary</h2>
-    <ul>
-      <li>We (the developer) run <strong>no server</strong> that receives your location history, photos, notes or expenses.</li>
-      <li>There are <strong>no ads</strong> and no sale or sharing of your data with advertisers or data brokers.</li>
-      <li>The app sends <strong>anonymous crash reports</strong> (Google Firebase Crashlytics), and, <strong>only if you switch it on</strong> in Settings, anonymous <strong>usage statistics</strong> (Google Analytics for Firebase). Neither contains your location, places, money or notes. See section 2.5.</li>
-      <li>Signing in to Google for backup, reading payment notifications, AI analysis with Gemini, receipt scanning, photo suggestions, QR sharing and "Pause when still" (physical activity) are <strong>optional</strong>; the app works without them.</li>
-    </ul>
-  </div>
-
-  <h2>1. Data the app collects and why</h2>
+  <h2>1. Data stored on your device</h2>
   <table>
-    <tr><th>Data</th><th>Why</th><th>Where it is kept</th></tr>
-    <tr>
-      <td><strong>Location</strong> (precise and approximate, including in the background when the app is closed, if you allow it)</td>
-      <td>To detect when you stay somewhere, for how long, and to draw your journal, summaries and map. Background access is what lets the journal fill in without you opening the app.</td>
-      <td>On your phone only (local database). Raw location points are never uploaded or included in backups.</td>
-    </tr>
-    <tr>
-      <td><strong>Physical activity</strong> (optional, Android "Physical activity" permission): only the kind of movement the phone's motion sensor reports (still, walking, running, cycling, in a vehicle)</td>
-      <td>For "Pause when still": while you are still, the app takes your location less often (at most every 15 minutes) to save battery, and goes back to the normal rate when you move. The kind of movement is also used to tell when you are staying at a place and when you are on the way, so visits are recorded more accurately, and to name your trips between places in the journal ("Walking", "By vehicle").</td>
-      <td>On your phone: each change of movement kind is stored with its time, next to your visits. Included in your Google Drive backup if you turn backup on. Never sent anywhere else or used for ads.</td>
-    </tr>
-    <tr>
-      <td><strong>Places and notes you create</strong>: names, categories, radius, visit notes, goals, budgets, recurring transactions, debts, people and groups of people (names and, if you add one, a photo from your camera or gallery kept as a small copy in the app), who you were with at a visit, privacy rules, trips</td>
-      <td>To label visits and power the summaries, goals, budgets, debts and trips. Names of people are only what you type; they are never sent to the AI service.</td>
-      <td>On your phone. Included in your Google Drive backup if you turn backup on.</td>
-    </tr>
-    <tr>
-      <td><strong>Photos</strong> (optional): the capture time of photos in your library, and a downsized copy of photos you attach to a visit or to a movement between places</td>
-      <td>To suggest or attach photos taken while you were at a place. The app reads only the photo's capture time, not the location stored inside the photo.</td>
-      <td>Downsized copies are stored in the app's private storage. They are included in your Google Drive backup if you turn backup on. Original photos are never modified or deleted.</td>
-    </tr>
-    <tr>
-      <td><strong>Payment notifications</strong> (optional): the amount, direction (spent / received), merchant and time found in notifications of the banking or wallet apps <em>you choose</em></td>
-      <td>To suggest expenses and attach them to the place where they happened.</td>
-      <td>Read with the app's basic reading on your phone, or, with a subscription and AI analysis on, by Google Gemini (see 2.6). To let you choose which apps to read, the app reads the list of apps installed on your phone (names, icons and package names); this list is used only to show the choices, is not stored apart from the apps you select, and is never sent anywhere. The full text of the notification is not stored. Only the extracted amount, direction, merchant, time and source app are kept, and included in backups. To check that a transaction is read correctly, the app also keeps, on your phone only, the last four digits of the account named in the notification and the latest balance shown there. These two values are not included in backups and are deleted when you turn off and delete notification data.</td>
-    </tr>
-    <tr>
-      <td><strong>Expenses you enter</strong> (amount, currency, note, time)</td>
-      <td>To show spending per visit and per period.</td>
-      <td>On your phone; included in backup if enabled.</td>
-    </tr>
-    <tr>
-      <td><strong>Camera</strong> (optional, asked the first time you use it): live camera frames while the QR scan screen is open, a photo when you scan a receipt, and a photo you take for a person, a visit or a movement</td>
-      <td>To read QR codes when you receive a share from another person.</td>
-      <td>Frames are read on your phone to find QR codes, and receipt photos to read their text; neither is stored. With Pro and AI analysis on, a smaller copy of a receipt photo you scan is sent for analysis (see 2.6). A photo you take for a person, a visit or a movement is kept as a small copy in the app (and in your backup if you use one). The camera is used only while a scan screen is open or while you take such a photo.</td>
-    </tr>
-    <tr>
-      <td><strong>Shares you send or receive</strong> (optional): the places, times, categories and, if you choose, coordinates, notes and expenses of one day, week or month</td>
-      <td>To let you share a period of your journal with another person, and to show what someone shared with you.</td>
-      <td>What you send is turned into an animated QR image (GIF) that you share yourself. What you receive is stored on your phone only, encrypted, kept separate from your own journal, excluded from backups, and can be deleted at any time.</td>
-    </tr>
-    <tr>
-      <td><strong>Crash reports and, if you switch it on, anonymous usage statistics</strong>: technical error reports, app and Android version, device model, language, which features are used, a randomly generated app-instance identifier</td>
-      <td>To find and fix bugs, keep the app stable and, with usage statistics, decide what to improve.</td>
-      <td>Sent to Google Firebase (Crashlytics, and Analytics if you turned it on) as our service provider. Never contains your location, places, amounts, notes or photos. See section 2.5.</td>
-    </tr>
-    <tr>
-      <td><strong>Settings</strong> (accuracy mode, appearance, reminders, etc.) and a few numbers the app learns about your phone's location accuracy</td>
-      <td>To make the app behave as you chose, and to tell more reliably when you are staying somewhere or moving.</td>
-      <td>On your phone. Most settings are included in backup; the learned accuracy numbers are not, and they are never sent anywhere.</td>
-    </tr>
+    <tr><th>Data</th><th>Purpose and storage</th></tr>
+    <tr><td><strong>Precise and approximate location</strong>, including background location when you grant that permission</td><td>To detect stays, journeys and time at places, and to show your journal, summaries and map. Location samples and derived visits are kept in the app's local database. Background location lets the journal work when the app is not open. Raw location points are never put in the optional Drive backup.</td></tr>
+    <tr><td><strong>Physical activity</strong> (such as still, walking, cycling or in a vehicle)</td><td>Optional Android activity-recognition access improves stay/journey detection and can reduce location sampling while you are still. Movement markers are stored locally and may be included in an optional Drive backup.</td></tr>
+    <tr><td><strong>Journal and financial data</strong></td><td>Places, visits, coordinates, notes, categories, goals, budgets, recurring payments, debts, people/groups, trips, and transactions are stored locally to provide the app's journal and summary features.</td></tr>
+    <tr><td><strong>Photos and camera data</strong></td><td>If you grant photo access, the app reads a photo's capture time to suggest photos for a visit; it does not request access to photo location metadata. Small copies of photos that you choose to attach to people, visits or journeys are stored in the app. Camera frames are used locally while scanning a QR code; a photo you choose to take can be attached as a small copy.</td></tr>
+    <tr><td><strong>Selected payment notifications</strong></td><td>Only after you enable notification access and choose banking or wallet apps, the app reads those notifications locally to extract a transaction amount, direction, merchant, time and source app. It does not read unselected apps. Full notification text is not stored. The app may retain the last four account digits and latest balance locally to help check a transaction; these values are not included in Drive backup. To show your choices, the app reads installed app names, icons and package names; that list is not sent to us.</td></tr>
+    <tr><td><strong>QR shares</strong></td><td>A share you create can contain the places, times, categories and—only when you choose them—coordinates, notes and expenses for up to 31 days. A received share is stored locally, encrypted with a key in Android Keystore, read-only, separate from your journal, and excluded from Drive backup.</td></tr>
+    <tr><td><strong>Settings and technical state</strong></td><td>Settings such as recording mode, privacy rules, language, and accuracy are stored locally. The app also keeps limited local technical state needed to run the feature, such as location-quality measurements and AI quota counters.</td></tr>
   </table>
 
-  <h2>2. Data that leaves your phone</h2>
-  <h3>2.1 Place-name lookup</h3>
-  <p>To suggest the name of a place where you just stayed, its coordinates (and nothing else) are sent to one map data provider: <strong>Huawei Petal Maps</strong> (HUAWEI Site Kit). No other place-lookup service is used. When a new stay appears in the Journal, the app first asks for the one place at that spot (reverse geocoding) and asks you whether that is where you are; if you say no, it asks for the places nearby. Your device has an allowance of Petal Maps lookups (a limited number for free use, a monthly allowance with Place Diary Pro); once it is used up, nothing is looked up and you can name the place yourself. Results are cached on your phone for a month, so a spot is normally looked up at most once a month. No account information, such as your email address, is sent with these requests. There is no switch for this in the app (in trial mode nothing is looked up); to stop it, stop recording or uninstall the app.</p>
-  <p>See <a href="https://consumer.huawei.com/en/privacy/privacy-policy/">Huawei's privacy policy</a>.</p>
+  <h2>2. When data leaves your device</h2>
+  <h3>2.1 Place lookup with Huawei Petal Maps</h3>
+  <p>When the app suggests a name for a stay or nearby place, it sends the coordinates of that stay to Huawei Petal Maps. This is the app's only online place-lookup provider. It does not send your account email, journal notes or other history with that request. Results are cached on your device for about 30 days; lookup stops when the applicable quota is exhausted or the service is not configured. See <a href="https://consumer.huawei.com/en/privacy/privacy-policy/">Huawei's Privacy Policy</a>.</p>
 
-  <h3>2.2 Maps display (Google Maps)</h3>
-  <p>Maps in the app (the places map, confirming a visit, adding or editing a place, privacy rules by place) are always shown with the Google Maps SDK, whether or not "Look up place names online" is on. To draw a map, the SDK requests map tiles from Google for the area you are viewing, so Google receives technical information such as your IP address, device information and the map area requested, as described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. The app does not send your visit history, place names or notes to Google Maps.</p>
+  <h3>2.2 Map display with Google Maps</h3>
+  <p>The app uses the Google Maps SDK to display maps. When a map is shown, Google receives the map requests and technical information such as your IP address, device information and map area, as described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. The app does not upload your journal, place names, notes or transaction data to Google Maps.</p>
 
-  <h3>2.3 Backup to Google Drive (optional)</h3>
-  <p>Signing in with Google is optional and only needed for backup. If you sign in and turn backup on, the app stores a backup file (and copies of photos you attached to visits and movements) in the hidden app-data folder of <strong>your own</strong> Google Drive. The app requests only the <code>drive.appdata</code> permission, so it cannot see any other file in your Drive. The backup includes: places, visits, notes, expenses, goals, budgets, recurring transactions, debts, your people and their photos (small copies), groups of people, who you were with, privacy rules, trips, movement kinds (walking, cycling, in a vehicle) and their times, most settings, the list of removed photos, cached place lookups, and photos attached to visits and movements. It does <strong>not</strong> include raw location points, your account details, the online-lookup choice or pause state. Backups can be sent only over Wi-Fi if you choose. Each phone keeps its own backup file there too, with the phone's model name, so that you can merge the data of another of your phones into this one ("Merge into this phone"); merging happens on your phone and deletes nothing. We, the developer, cannot access this backup.</p>
-  <p>You can remove the backup at any time from Settings → Google Drive backup → "Delete backup on Drive".</p>
+  <h3>2.3 Optional Google Drive backup</h3>
+  <p>If you sign in with Google and enable backup, the app uses the restricted <code>drive.appdata</code> scope to store files only in your Google Drive app-data folder. The developer cannot access that folder. Backups can include places, visits, tracking segments, notes, expenses (except dismissed suggestions), goals, budgets, recurring payments, debts, people and their small avatar copies, groups, privacy rules, trips, movement markers, attached photo copies, selected settings, and cached place lookups. They do not include raw GPS points, notification account/balance checking data, your Google credentials, AI chat history, or AI usage counters. You can choose Wi-Fi-only photo backup, sign out to stop backup, or delete the backup from the app.</p>
 
-  <h3>2.4 Sharing a period by QR code (optional)</h3>
-  <p>You can create a GIF of QR codes that contains a day, week or month (at most one month) of your journal and give it to someone else. You choose what it contains: places, times and categories, and optionally coordinates, notes and expenses. The content is compressed and encrypted on your phone with a key derived from a PIN that you set; the first QR code only states how many codes there are and their random identifiers. Whoever receives the GIF needs the PIN to read it. The PIN is shown to you so that you can tell the recipient; it is not sent anywhere. The GIF leaves your phone only when you share it yourself (for example in a chat app); we do not upload it and we do not receive it. Anyone who has both the GIF and the PIN can read the content, so share the PIN only with the person you mean to share with.</p>
-  <p>When you receive a share, it is stored on your phone only, encrypted with a key held by the Android Keystore. It is shown as read-only, is not added to your own journal or summaries, is not included in backups, and you can delete it at any time.</p>
+  <h3>2.4 Optional QR sharing and system sharing</h3>
+  <p>QR sharing is offline. The selected data is compressed and encrypted on your device using a PIN you set, then encoded in QR codes or a GIF. It leaves the device only when you choose to share it through Android's share sheet. Anyone with both the shared QR/GIF and the PIN can read it, so share the PIN only with the intended recipient. We do not receive or host this data.</p>
 
-  <h3>2.5 Crash reports and anonymous usage statistics (Google Firebase)</h3>
-  <p>The app uses two services provided by Google. <strong>Firebase Crashlytics</strong> sends a crash report when the app crashes or hits an unexpected error; this is on and there is no switch for it in the app. <strong>Google Analytics for Firebase</strong> counts which features are used, anonymously; this is also on, without a switch. Neither is active in trial mode.</p>
-  <p><strong>Usage statistics.</strong> Each event has a fixed name and a few coarse values, for example "a visit was confirmed (automatically or by you)", "a goal was created (at least or at most, per day, week or month)", "the summary was opened (week)", "a share was created (covering 2 to 7 days)", the name of a screen (such as "Settings"), the interface language, the theme, the recording mode and accuracy you chose, and whether a permission was granted or denied. Counts and durations are grouped into ranges.</p>
-  <p><strong>Crash reports.</strong> When the app crashes or hits an unexpected error, a report is sent with the technical error and stack trace, the app version, Android version and device model, whether the app was in the foreground, the app's internal mode, the chosen accuracy mode, the database version and the interface language.</p>
-  <p><strong>What is never included:</strong> your location or coordinates, place names or addresses, visit history, amounts of money, notification text, photos or file names, the PIN of a shared QR code, your e-mail or Google account, or anything you typed. We do not set a user identifier, we turn off the advertising identifier and ad personalization, and the data is not used for advertising or sold.</p>
-  <p>Firebase creates a randomly generated app-instance identifier to count devices. Google processes the data as our service provider; see the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a>. Event data is kept for up to 14 months and crash reports for up to 90 days. Switching usage statistics off stops new events; to reset the identifier, clear the app's storage or reinstall.</p>
+  <h3>2.5 Firebase crash reporting and usage analytics</h3>
+  <p>The release app uses Google Firebase Crashlytics to receive crash and unexpected-error reports and Google Analytics for Firebase to understand feature use. These services may receive a randomly generated app-instance identifier, device model, Android and app version, language, technical error/stack-trace information, app mode and coarse, predefined feature events. Analytics events use fixed names and coarse values or ranges; automatic screen reporting, advertising ID collection, SSAID collection and ad-personalization signals are disabled. We do not set a user ID.</p>
+  <p>These reports and analytics do <strong>not</strong> include coordinates, addresses, place names, visit history, money amounts, notification text, photos, file names, QR PINs, email addresses, or text you type. Crash reporting and analytics are disabled in the app's trial/demo mode. Firebase processes this data for us; see <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
-    <h3>2.6 AI analysis with Google Gemini (Place Diary Pro, optional)</h3>
-  <p>AI analysis is part of the paid <strong>Place Diary Pro</strong> plan (monthly, yearly or a one-time lifetime purchase; the former Ultra subscription counts as Pro). Without Pro, notifications and receipts are read with the app's basic reading and nothing is sent for this purpose. With a subscription, "AI analysis" is on by default (you can turn it off in Settings), and data is sent to <strong>Google Gemini</strong> through Firebase AI Logic as follows:</p>
+  <h3>2.6 Optional Pro AI features (Google Gemini through Firebase AI Logic)</h3>
+  <p>Pro users can use two AI features when Firebase AI Logic is available: receipt scanning and Ask AI. The app sends these requests to Google Gemini through Firebase AI Logic, protected by Firebase App Check. AI is not used for payment-notification reading, transaction sorting, place suggestions, or goal suggestions.</p>
   <ul>
-    <li><strong>Notifications:</strong> the text of notifications from the apps you chose for "Spending from notifications" is sent with account and card numbers, balances, one-time codes, transaction references, phone numbers, email addresses and links <strong>masked on your phone first</strong> (the amount, the merchant and names stay), to find the amount, the currency, whether money was spent or received, the category and a short summary, and to tell whether it is a transaction at all (advertisements, loan offers, codes and reminders are then not recorded).</li>
-    <li><strong>Receipts:</strong> the photo of a receipt you scan is sent <strong>made smaller</strong> (about 1024 pixels on the long side) to read the total, the currency, the category, the shop and the time printed.</li>
-    <li><strong>Sorting transactions:</strong> when you tap "Sort" on the Spending screen, the confirmed transactions of the period on screen that have a note but no category: the note and, for a transaction read from a notification, the package name of the app it came from (up to 30 at a time). No amounts, place names or coordinates. Each transaction is sent once, even if you tap again for a longer period while it is being sorted. While AI analysis is on, the app also does this by itself in the background for the last year of transactions, at most once a day and only while the phone is charging, on Wi-Fi and with enough battery (at most 90 transactions each time); the same data is sent as when you tap.</li>
-    <li><strong>Place suggestions:</strong> when you confirm a stay, the names and types of the nearby places the app found, the time of day, the weekday and the length of the stay; no coordinates.</li>
-    <li><strong>Goal suggestions:</strong> hours per week by type of place for the last four weeks and the goals you already have; no place names, notes or coordinates.</li>
-    <li><strong>Ask AI:</strong> the question you type, the last few questions and answers of the same chat (so a follow-up is understood), a fixed description of the app's features, and <strong>totals worked out on your phone</strong> for this and last week and this and last month: hours by type of place, time away from home and on the move, the number of places and of new places, average times you left and came back home, spending and money received by transaction category in each currency, your budgets and their progress, your time goals, recurring payments due in the next two weeks (category, amount, date) and open debt totals per currency. <strong>Never sent:</strong> coordinates, addresses, place names, notes, people's names or notification text. The AI uses this to answer, compare and suggest; a few questions about other periods are still answered on your phone. When you ask the app to record something (a transaction, a budget, a time goal), the AI only proposes it: nothing is saved until you tap Confirm. Do not type personal details you do not want sent. Your chats are kept only on your phone (not in the Drive backup) until you delete them in the chat history.</li>
-    <li><strong>Weekly recap:</strong> if you turned on the weekly summary notification, its text is written by the AI from this and last week's totals (the same kinds of totals as above, never names, places or coordinates).</li>
+    <li><strong>Receipt scanning:</strong> the app sends a reduced-size photo of the receipt to identify its total, currency, merchant, category, and date/time. If the AI result is unavailable or invalid, the app falls back to local processing.</li>
+    <li><strong>Ask AI:</strong> the app sends the question you type, up to four preceding chat turns, a description of app features, and locally calculated summaries such as time by place category, totals for spending/received money by category and currency, budget progress, goals, recurring payments and debt totals. It does not send coordinates, addresses, place names, people's names, transaction notes, notification text, or your photo library.</li>
   </ul>
-  <p>Google processes this data as our service provider under the paid Gemini API terms, which do not allow Google to use it to improve its products. The app keeps only the results (amounts, categories, short summaries and suggestions), never the notification text or the photo; the questions and answers of Ask AI stay in your chat history on the phone; Requests go over an encrypted connection and are protected by Firebase App Check. Turn the switch off, or let the subscription end, and nothing more is sent. The setting is not part of your Google Drive backup. See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and the <a href="https://ai.google.dev/gemini-api/terms">Gemini API terms</a>.</p>
+  <p>AI-generated actions are only proposals: no expense, budget or goal is saved unless you confirm it. AI chat history stays on your device and is not included in Drive backup. Do not enter personal information in an AI question unless you want it included in that request. See the <a href="https://ai.google.dev/gemini-api/terms">Gemini API terms</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
-    <h3>2.7 Purchases</h3>
-  <p>Place Diary Pro (a monthly or yearly subscription, or a one-time lifetime purchase) is bought, switched, renewed and cancelled through <strong>Google Play</strong>, which handles your payment details; the developer never sees them. The app only asks Google Play which purchase this Google account has, and keeps that answer on your phone. Free trials are granted by Google Play, one per Google account.</p>
+  <h3>2.7 Google Play purchases</h3>
+  <p>Pro subscriptions and lifetime purchases are processed by Google Play. Google handles payment information. The app asks Google Play only for purchase status needed to unlock Pro on the device; the developer does not receive your payment card details.</p>
 
-    <h3>2.8 Assistants on your phone (App Functions, Android 16 and later)</h3>
-  <p>On Android 16 and later, the app offers a few actions to assistants on your phone that the system allows to use them (for example Google Gemini, with the system's App Functions permission): add a transaction, total your spending for today, this week, month or year, sum up your time (places visited, hours by type of place, the place you are at now), and pause or resume recording. These actions run in the app on your phone when the assistant asks; what the assistant does with the answer is covered by the assistant's own privacy policy. The app sends nothing anywhere for this purpose itself. You can stop it by not using such an assistant or by revoking its permissions in Android settings.</p>
+  <h3>2.8 Import, export and on-device assistants</h3>
+  <p>When you choose to import a Google Timeline export, the app reads the selected file locally and imports stays, not raw location points; it does not upload the file. CSV exports are written to a folder you choose through Android's system picker and are not sent by the app. On supported Android versions, a system assistant may invoke an app action such as adding an expense or asking for a total; the action runs locally in the app. Any handling by that assistant is governed by its own policy.</p>
 
-    <h3>2.9 Import and export (optional)</h3>
-  <p><strong>Import from Google Timeline:</strong> when you choose a Timeline file exported from Google Maps (Timeline.json from your phone, or the "Semantic Location History" of Google Takeout, as .json or .zip), the app reads it on your phone and adds the stays it contains as visits (time, coordinates of the stay, and the place name or Home / Work label when the file has one). Raw location points in the file are not imported. The file is not sent anywhere and is not kept after reading; the imported visits are stored like any other visit and are part of your Google Drive backup if you turn backup on.</p>
-  <p><strong>Export data:</strong> the app can write your visits (date, times, place, category, status, latitude and longitude) and transactions (date, time, amount, currency, direction, category, note, place) as CSV files into a folder you choose with the system file picker. The app does not send these files anywhere; what happens to them afterwards is up to you.</p>
-
-<h2>3. What we do not do</h2>
+  <h2>3. Permissions and your choices</h2>
   <ul>
-    <li>We do not sell your data, share it for advertising, or use it for profiling.</li>
-    <li>We do not upload your location history, photos, notes or expenses to any server operated by the developer, and we do not put them in usage statistics or crash reports.</li>
-    <li>We do not read notifications of apps you have not chosen, and we do not store the content of notifications or full account numbers.</li>
-    <li>Trial mode uses sample data made on your phone. It records nothing about you, sends nothing anywhere and can be exited at any time, which deletes the sample data.</li>
+    <li><strong>Location:</strong> revoke precise, approximate, or background location in Android Settings. Without the needed permission, recording is limited or stops.</li>
+    <li><strong>Privacy controls:</strong> pause recording or create time- and place-based privacy rules. During a private period, the app does not store location points, activity markers, or visits.</li>
+    <li><strong>Activity, photos, camera and notifications:</strong> these optional permissions/features can be denied, revoked, or disabled in Android Settings and the app's settings. Camera access is used only while a QR scan or photo-taking screen is open.</li>
+    <li><strong>Backup:</strong> Google sign-in and Drive backup are optional. Signing out stops future backup; delete the remote backup from the backup settings if you no longer want it in Drive.</li>
+    <li><strong>AI and sharing:</strong> use them only when you choose. Ending Pro or an unavailable AI service prevents further AI requests.</li>
   </ul>
 
-  <h2>4. Your choices and rights</h2>
-  <ul>
-    <li><strong>Location:</strong> change or revoke location and background location in Android Settings → Apps → Place Diary → Permissions. The app then records only while open, or not at all.</li>
-    <li><strong>Physical activity:</strong> optional; turn "Pause when still" off in Settings, or revoke "Physical activity" in Android Settings → Apps → Place Diary → Permissions. The app then takes your location at the rate of the accuracy mode you chose.</li>
-    <li><strong>Pause or restrict recording:</strong> use the quick pause or time/place privacy rules in Settings; no location is stored during those periods.</li>
-    <li><strong>Photos and notifications:</strong> both are opt-in and can be turned off at any time in Settings; notification access can also be revoked in Android Settings.</li>
-    <li><strong>Backup:</strong> optional; signing out stops backup and keeps data on your phone.</li>
-    <li><strong>Usage statistics and crash reports:</strong> anonymous and always on; to stop them you can uninstall the app or contact us.</li>
-    <li><strong>Access and deletion:</strong> all your data is inside the app and can be deleted there (delete a visit's note, expenses or photos, delete a place). Uninstalling the app or clearing its storage in Android Settings removes everything stored on the phone.</li>
-  </ul>
+  <h2 id="delete">4. Retention and deletion</h2>
+  <p>Data stored by the app remains on your device until you delete it in the app, clear app storage, or uninstall the app. You can delete individual places, visits, notes, transactions, attached photos, QR shares and AI chat history in the relevant features. Uninstalling or clearing storage removes local app data.</p>
+  <p>If you enabled Drive backup, delete it from Settings → Google Drive backup → Delete backup on Drive before uninstalling, or remove the app's hidden data in <a href="https://drive.google.com/drive/settings">Google Drive settings</a>. Backups remain in your Drive until removed. Firebase retention is governed by the Firebase service configuration and Google policies.</p>
 
-  <h2 id="delete">5. Deleting your data</h2>
-  <p>Because the developer holds no copy of your data, deleting it is done on your side:</p>
-  <ol>
-    <li>On your phone: uninstall Place Diary, or Android Settings → Apps → Place Diary → Storage → Clear storage.</li>
-    <li>In Google Drive (only if you used backup): open Settings → Google Drive backup → "Delete backup on Drive" in the app before uninstalling. You can also remove the app's hidden data at <a href="https://drive.google.com/drive/settings">Google Drive → Settings → Manage apps</a> and revoke its access at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
-  </ol>
-
-  <h2>6. Data retention</h2>
-  <p>Data on your phone is kept until you delete it or remove the app. Cached place lookups expire after a limited time. Dismissed notification-based expenses are removed automatically after about 30 days. Google Firebase keeps crash reports for up to 90 days and, if you turned them on, usage statistics for up to 14 months. A Google Drive backup stays in your Drive until you delete it.</p>
-
-  <h2>7. Children</h2>
-  <p>Place Diary is not directed to children under 13 and we do not knowingly collect their data.</p>
-
-  <h2>8. Security</h2>
-  <p>Data is stored in the app's private storage on your device and is protected by Android's app sandbox. Network requests use HTTPS. No system is perfectly secure, so keep your device locked and updated.</p>
-
-  <h2>9. Changes to this policy</h2>
-  <p>If the app's data practices change, this page will be updated and the date at the top changed. Material changes will also be reflected in the app's permission and settings screens.</p>
-
-  <h2>10. Contact</h2>
+  <h2>5. Security</h2>
+  <p>Local data is kept in Android app-private storage. Received QR shares are encrypted with Android Keystore. Network connections use HTTPS. No system can be perfectly secure; keep your device locked and up to date.</p>
+  <h2>6. Children</h2>
+  <p>Place Diary is not directed to children under 13, and we do not knowingly collect personal information from children.</p>
+  <h2>7. Changes and contact</h2>
+  <p>We may update this policy when the app's data practices change. The updated date will appear at the top of this page.</p>
   <p>Questions or requests: <a href="mailto:trunglethanh2001@gmail.com">trunglethanh2001@gmail.com</a>.</p>
 </main>
 </body>
