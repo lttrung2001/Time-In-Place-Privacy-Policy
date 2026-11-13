@@ -18,7 +18,7 @@
 <body>
 <main>
   <h1>Place Diary: Time &amp; Money – Privacy Policy</h1>
-  <p class="meta">Last updated: 6 November 2026 · Android package: <code>com.trunglabs.timeinplace</code> · Developer: TrungLabs</p>
+  <p class="meta">Last updated: 13 November 2026 · Android package: <code>com.trunglabs.timeinplace</code> · Developer: TrungLabs</p>
   <p>Place Diary helps you keep a private journal of places, time and spending. This policy explains the data the app handles, why it handles it, where it goes, and the controls available to you.</p>
 
   <div class="card"><h2>At a glance</h2><ul>
@@ -35,7 +35,7 @@
     <tr><td><strong>Physical activity</strong> (such as still, walking, cycling or in a vehicle)</td><td>Optional Android activity-recognition access improves stay/journey detection and can reduce location sampling while you are still. Movement markers are stored locally and may be included in an optional Drive backup.</td></tr>
     <tr><td><strong>Journal and financial data</strong></td><td>Places, visits, coordinates, notes, categories, goals, budgets, recurring payments, debts, people/groups, trips, and transactions are stored locally to provide the app's journal and summary features.</td></tr>
     <tr><td><strong>Photos and camera data</strong></td><td>If you grant photo access, the app reads a photo's capture time to suggest photos for a visit; it does not request access to photo location metadata. Small copies of photos that you choose to attach to people, visits or journeys are stored in the app. Camera frames are used locally while scanning a QR code; a photo you choose to take can be attached as a small copy.</td></tr>
-    <tr><td><strong>Selected payment notifications</strong></td><td>Only after you enable notification access and choose banking or wallet apps, the app reads those notifications locally to extract a transaction amount, direction, merchant, time and source app. It does not read unselected apps. Full notification text is not stored. The app may retain the last four account digits and latest balance locally to help check a transaction; these values are not included in Drive backup. To show your choices, the app reads installed app names, icons and package names; that list is not sent to us.</td></tr>
+    <tr><td><strong>Selected payment notifications</strong></td><td>Only after you enable notification access and choose banking or wallet apps, the app reads those notifications locally to extract a transaction amount, direction, merchant, time and source app. It does not read unselected apps. Full notification text is not stored. The app may retain the last four account digits and latest balance locally to help check a transaction; these values are not included in Drive backup. To show your choices, the app reads the name, icon and package name of apps it can see: apps with a launcher icon and a fixed list of banking and wallet apps declared in the app. It does not request Android's permission to list every installed app, and that list is not sent to us.</td></tr>
     <tr><td><strong>QR shares</strong></td><td>A share you create can contain the places, times, categories and—only when you choose them—coordinates, notes and expenses for up to 31 days. A received share is stored locally, encrypted with a key in Android Keystore, read-only, separate from your journal, and excluded from Drive backup.</td></tr>
     <tr><td><strong>Settings and technical state</strong></td><td>Settings such as recording mode, privacy rules, language, and accuracy are stored locally. The app also keeps limited local technical state needed to run the feature, such as location-quality measurements and AI quota counters.</td></tr>
   </table>
@@ -76,6 +76,7 @@
     <li><strong>Location:</strong> revoke precise, approximate, or background location in Android Settings. Without the needed permission, recording is limited or stops.</li>
     <li><strong>Privacy controls:</strong> pause recording or create time- and place-based privacy rules. During a private period, the app does not store location points, activity markers, or visits.</li>
     <li><strong>Activity, photos, camera and notifications:</strong> these optional permissions/features can be denied, revoked, or disabled in Android Settings and the app's settings. Camera access is used only while a QR scan or photo-taking screen is open.</li>
+    <li><strong>App list (notification spending):</strong> the app does not request Android's permission to list every installed app. The "Add app" screen shows apps with a launcher icon and a fixed list of banking and wallet apps declared in the app; only the apps you select are read.</li>
     <li><strong>Backup:</strong> Google sign-in and Drive backup are optional. Signing out stops future backup; delete the remote backup from the backup settings if you no longer want it in Drive.</li>
     <li><strong>AI and sharing:</strong> use them only when you choose. Ending Pro or an unavailable AI service prevents further AI requests.</li>
   </ul>
